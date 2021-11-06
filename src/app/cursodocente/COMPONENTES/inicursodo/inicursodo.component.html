@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ 
+</head>
+
+<body>
+  <div class="container">
+
+
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">Id</th>
+          <th scope="col">id_docente</th>
+          <th scope="col">id_curso</th>
+          <th scope="col">stauts</th>
+          <th scope="col">fecha_inicio</th>
+          <th scope="col">fecha_fin</th>
+          <th scope="col">Editar</th>
+          <th scope="col">Eliminar</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let modelo of ListarModelos">
+          <th>{{modelo.id}}</th>
+          <td>{{modelo.id_docente}}</td>
+          <td>{{modelo.id_curso}}</td>
+          <td>{{modelo.stauts}}</td>
+          <td>{{modelo.fecha_inicio}}</td>
+          <td>{{modelo.fecha_fin}}</td>
+          
+          <td>
+           
+            <button (click)="modificar(modelo.id)" type="button" class="btn btn-info">Editar</button>
+          </td>
+          <td>
+            <button (click)="eliminar(modelo.id)" type="button" class="btn btn-danger">Eliminar</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+   
+    <button type="button" class="btn btn-info" (click)="Onnuevo()">AgregarPersona</button>
+
+  </div>
+
+</body>
+
+</html>
+
