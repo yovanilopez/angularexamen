@@ -34,10 +34,13 @@ export class CursolistaComponent implements OnInit {
         console.log('Eliminado');
         this.ListarModelos;
         this.router.navigate(['/listacurso']);
+        
+        
 
 
       },
       err=> console.log(err));
+      setTimeout(location.reload.bind(location), 500);
   }
 
   modificar(id:string){
@@ -50,6 +53,10 @@ export class CursolistaComponent implements OnInit {
   Onnuevo(){
     this.router.navigate(["agregarcurso"])
     }
+
+    ActualizarTabla(){
+      setTimeout(location.reload.bind(location), 500);
+      }
   
 
 

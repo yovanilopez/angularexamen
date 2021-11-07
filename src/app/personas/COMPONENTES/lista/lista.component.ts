@@ -35,6 +35,7 @@ export class ListaComponent implements OnInit {
 
       },
       err=> console.log(err));
+      setTimeout(location.reload.bind(location), 500);
   }
 
   modificar(id:string){
@@ -47,7 +48,11 @@ export class ListaComponent implements OnInit {
   Onnuevo(){
     this.router.navigate(["agregarpersona"])
     }
-  
+     
+
+    Actualizar(){
+      setTimeout(location.reload.bind(location), 500);
+      }
 
 
 

@@ -34,6 +34,7 @@ export class InicursodoComponent implements OnInit {
 
       },
       err=> console.log(err));
+      setTimeout(location.reload.bind(location), 500);
   }
   modificar(id:string){
     this.router.navigate(['/modificarcursodo/'+id])
@@ -45,5 +46,10 @@ export class InicursodoComponent implements OnInit {
   Onnuevo(){
     this.router.navigate(["agregarcursodo"])
     }
+
+    Actualizar(){
+      setTimeout(location.reload.bind(location), 500);
+      }
+  
 
 }

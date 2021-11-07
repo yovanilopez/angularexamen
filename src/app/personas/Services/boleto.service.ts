@@ -7,7 +7,7 @@ import{HttpClient}from '@angular/common/http'
 })
 export class BoletoService {
 
-  url="http://localhost:3000/persona"
+  url="https://appinuevo.herokuapp.com/persona"
 
   constructor(private http:HttpClient) { }
 

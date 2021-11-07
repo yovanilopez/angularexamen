@@ -36,6 +36,7 @@ export class ListaestucursoComponent implements OnInit {
 
       },
       err=> console.log(err));
+      setTimeout(location.reload.bind(location), 500);
   }
 
   modificar(id:string){
@@ -49,6 +50,10 @@ export class ListaestucursoComponent implements OnInit {
     this.router.navigate(["agregarestudiantecurso"])
     }
   
+
+    Actualizar(){
+      setTimeout(location.reload.bind(location), 500);
+      }
 
 
 
